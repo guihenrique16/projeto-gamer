@@ -1,0 +1,47 @@
+/* imports de fontes */
+
+/* reset CSS */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.layout-grid{
+    width: 80%;
+    margin: 0% auto;
+}
+
+body {
+    color:white;
+}
+
+/* HEADER */
+header {
+    background-color:#1B1426;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contatos {
+    display: flex;
+    align-items: center;
+    
+}
+
+.phone {
+    display: flex;
+
+}
+
+.mail {
+    display: flex;
+    padding-left: 20px;
+}
+
+
