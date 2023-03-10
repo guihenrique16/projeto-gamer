@@ -8,14 +8,18 @@
     box-sizing: border-box;
 }
 
+/* classes genericas */
 .layout-grid{
     width: 80%;
+    height: 100%;
     margin: 0% auto;
 }
 
 body {
-    color:white;
+    background-color:red;
 }
+
+/* mobile first */
 
 /* HEADER */
 header {
@@ -43,5 +47,23 @@ header {
     display: flex;
     padding-left: 20px;
 }
+
+.menu {
+    color: white;
+}
+
+header .header-top {
+    display: none;
+}
+
+header .menu {
+    display: none;
+}
+
+header .icons {
+    display: none;
+}
+
+
 
 
