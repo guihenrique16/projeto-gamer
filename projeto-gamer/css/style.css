@@ -1,69 +1,102 @@
-/* imports de fontes */
+/* Imports de fonts */
 
-/* reset CSS */
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+/* Reset CSS */
 
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* classes genericas */
-.layout-grid{
-    width: 80%;
+
+/* Classes Genéricas */
+
+.layout-grid {
+    width: 90%;
     height: 100%;
-    margin: 0% auto;
+    margin: 0 auto;
 }
 
-body {
-    background-color:red;
-}
 
-/* mobile first */
+/* justify content + align items */
 
-/* HEADER */
-header {
-    background-color:#1B1426;
-}
-
-.header-flex {
+.alinhamento-between-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.contatos {
-    display: flex;
-    align-items: center;
-    
+body {
+    background-color: rgb(132, 0, 188);
 }
 
-.phone {
-    display: flex;
 
-}
+/* Mobile First */
 
-.mail {
-    display: flex;
-    padding-left: 20px;
-}
 
-.menu {
-    color: white;
+/* HEADER */
+
+header {
+    height: 60px;
+    background-color: #1B1426;
 }
 
 header .header-top {
     display: none;
 }
 
-header .menu {
-    display: none;
+header .header-bottom {
+    height: 60px;
 }
 
-header .icons {
-    display: none;
+header .logo {
+    width: 86px;
 }
 
+header .header-bottom nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh - 60px);
+    background-image: linear-gradient(to right bottom, rgba( 27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    display: flex;
+    flex-direction: column;
+}
 
+header .header-bottom nav>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #f9aa01;
+    padding: 30px 0;
+    color: white;
+    font-size: 15px;
+    font-family: inter;
+    text-decoration: none;
+    text-align: center;
+}
 
+header .header-bottom nav a:last-of-type {
+    border-bottom: none;
+}
 
+header .header-bottom nav .midias-sociais {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+header .menu-usuarios {
+    display: none;
+}
